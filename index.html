@@ -1,0 +1,180 @@
+<html>
+<head>
+	<title>Hugo Rezende</title>
+
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			
+
+				$('#fullpage').fullpage({
+				anchors: ['projetos', 'sobre', 'contato'],
+				
+			});
+			$(".portfolioItemContainer").hover(function(){
+
+
+				$( this ).find(".testeEfeito").addClass("testeEfeitoHover");
+				$( this ).addClass("current");
+
+				}, function() {
+    			$( this ).find(".testeEfeito").removeClass( "testeEfeitoHover" );
+    			$( this ).removeClass( "current" );
+
+
+
+  			})
+
+
+
+  			$(".box1, .subtitle, .container-menu").hide().each(function(i) {
+  				
+  				$(this).delay(i*500).fadeIn();
+  				
+			});
+			
+		});
+	</script>
+
+
+
+</head>
+
+<body>
+
+	<div class="container-menu">
+		<ul class="menu">
+			<li class="item"><a href="#">projects</a></li>
+			<li class="item"><a href="#">about</a></li>
+			<li class="item"><a href="#">contact</a></li>
+		</ul>
+	</div>
+
+	<div id="fullpage">
+
+	<div class="section inicial" id="section0">
+		<div class="box1"><div class="nomeLogo"><span class="mullerBold">hugo</span><span class="mullerUltraLight">rezende</span></div></div>
+		<div class="subtitleContainer"><div class="subtitle">Frontend Developer - UX designer</div></div>
+		
+	</div>
+
+
+	<div class="section projects" id="section1">
+		<div class="box2"><span class="mullerBold">last</span><span class="mullerUltraLight">projects</span></div>
+		
+
+
+		<div class="projectsSlide">
+
+				
+
+
+
+				<div class="portfolioItemContainer">
+					
+					<div class="portfolioImg">
+						<img src="images/folio01.jpg" style="position:absolute; opacity:.5">
+						<div class="portfolioTxtContainer">
+						
+						<div class="portfolioTxt">
+							<div class="testeEfeito">hotel reserva do</div>
+						</div>
+
+						<div class="portfolioTxt">
+							<div class="testeEfeito">ibitipoca</div>
+						</div>
+
+					</div>
+
+					</div>
+
+					
+
+				</div>
+
+
+				<div class="portfolioItemContainer">
+					
+					<div class="portfolioImg">
+						<img src="images/folio01.jpg" style="position:absolute; opacity:.5">
+						<div class="portfolioTxtContainer">
+						
+						<div class="portfolioTxt">
+							<div class="testeEfeito">um texto</div>
+						</div>
+
+						<div class="portfolioTxt">
+							<div class="testeEfeito">maior</div>
+						</div>
+
+					</div>
+
+					</div>
+
+					
+
+				</div>
+
+
+
+
+				
+		
+		
+
+		</div>
+
+
+	    
+	    
+
+	</div>
+	<div class="section about" id="section2">
+		
+		<div class="box2 preto"><span class="mullerBold">about</span><span class="mullerUltraLight">me</span></div>
+
+		<div class="aboutMe" style="height:90%">
+
+			<div class="container-about">
+				<div class="fotoAbout">
+					<img src="images/hugo.jpg">
+				</div>
+
+				<div class="textAbout"><span class="mullerBold" style="font-size:24px">Hi!</span><p>I’m a software and interface developer with nine years of professional experience. I’ve helped many companies to create pleasant, effective and easy to use solutions. I defend that design and programming must be worked together, bringing the best of each area to minimize the distance between software and user.</p>
+<span style="font-family:mullerlight_italic">
+Strong experience with developing rich applications with HTML/CSS/JS;<br>
+Experience with Node.js and Angular.js<br>
+Solid knowledge of PHP, MYSQL, and Codeigniter Framework;<br>
+Solid knowledge with Magento eCommerce (template building).<br>
+Solid knowledge with Wordpress (template building).<br>
+Strong experience in Photoshop, Illustrator to create software’s and web layout;<br>
+Experience with MYSQL databases;<br>
+Solid skills with developing hybrid aplications for Android/iOS (Cordova/PhoneGap)</span>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+<script>
+$(".box1").hide();
+</script>
+
+</body>
+</html>
