@@ -2,9 +2,8 @@
 <head>
 	<title>Hugo Rezende</title>
 	 <meta charset="UTF-8"> 
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
-	
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 
@@ -12,13 +11,27 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	
+	
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
 
-		
+			
+			/*
+				$('#fullpage').fullpage({
+				anchors: ['projetos', 'sobre', 'contato'],
+				
+				//normalScrollElements: '#section1',
+				scrollOverflow: true
+				
+			});
+			*/
 			$(".portfolioItemContainer").hover(function(){
 
 
@@ -34,7 +47,13 @@
   			})
 
 
-			
+			/*
+  			$(".box1, .subtitle, .container-menu").hide().each(function(i) {
+  				
+  				$(this).delay(i*500).fadeIn();
+  				
+			});
+			*/
 		});
 	</script>
 
@@ -52,9 +71,9 @@
 			</div>
 
 		<ul class="menu">
-			<li class="item"><a href="#projects">projects</a></li>
-			<li class="item"><a href="#about">about</a></li>
-			<li class="item"><a href="#contact">contact</a></li>
+			<li class="item"><a href="#">projects</a></li>
+			<li class="item"><a href="#">about</a></li>
+			<li class="item"><a href="#">contact</a></li>
 		</ul>
 	</div>
 
@@ -66,9 +85,9 @@
 			
 			
 
-			<div class="text-inicio">
-			<span class="mullerBold hello" >Hello!</span><br>
-			<span class="mullerBold" style="font-size: 18px; color: #fff;">I'm a dev frontend and UX designer that try to help companies to create pleasant, effective and easy to use solutions. Fell free to <a href="#contact"><span style="text-decoration: underline;">send me a message</span></a> :)</span>
+			<div style="width:500px; margin:0 auto; text-align: center;">
+			<span class="mullerBold" style="font-size: 150px; color: #fff">Olá!</span><br>
+			<span class="mullerBold" style="font-size: 18px; color: #fff">Sou um desenvolvedor frontend e UX designer que tenta ajudar empresas a criarem soluções criativas, efetivas e fáceis de se utilizar. Me mande uma mensagem</span>
 
 			</div>
 
@@ -78,7 +97,7 @@
 	</div>
 
 
-	<div class="section projects" id="projects">
+	<div class="section projects" id="section1">
 				
 
 				
@@ -99,47 +118,40 @@
 
 
 			
-						<a href="http://moviecom.com.br/site_v2" target="_blank">
-							<div class="portfolioItemContainer">
-								<div style="width:300px; margin: 0 auto">
-								<img src="images/topobrowser.png" width="300px" >
-								</div>
-								<div class="portfolioImg">
 
-									<video width="300px" style="position: absolute;
-	    opacity: .5;" playsinline autoplay muted loop>
-							  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-							<source src="folio/300px_thumb/moviecom_desktop_1.mp4" type="video/mp4">
+						<div class="portfolioItemContainer">
 							
-							</video>
-									<div class="portfolioTxtContainer">
-									
-									<div class="portfolioTxt">
-										<div class="testeEfeito">Moviecom</div>
-									</div>
+							<img src="images/topobrowser.png" width="300px" >
+							<div class="portfolioImg">
 
-									<div class="portfolioTxt">
-										<div class="testeEfeito">Cinemas</div>
-									</div>
-
-								</div>
-
-								</div>
-
+								<video width="300px" style="position: absolute;
+    opacity: .5;" playsinline autoplay muted loop>
+						  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+						<source src="folio/300px_thumb/moviecom_desktop_1.mp4" type="video/mp4">
+						
+						</video>
+								<div class="portfolioTxtContainer">
 								
+								<div class="portfolioTxt">
+									<div class="testeEfeito">Moviecom</div>
+								</div>
+
+								<div class="portfolioTxt">
+									<div class="testeEfeito">Cinemas</div>
+								</div>
 
 							</div>
-						</a>
+
+							</div>
+
+							
+
+						</div>
 
 
 
-
-						<a href="http://ibiti.com/" target="_blank">
 							<div class="portfolioItemContainer">
 							
-							<div style="width:300px; margin: 0 auto">
-								<img src="images/topobrowser.png" width="300px" >
-								</div>
 							<div class="portfolioImg">
 								<video width="300px" style="position: absolute;
     opacity: .5;" playsinline autoplay muted loop>
@@ -161,18 +173,15 @@
 
 							</div>
 
+							
+
 						</div>
-						</a>
 
 
 
 
-						<a href="http://domeuclosetproseu.com.br/" target="_blank">
 						<div class="portfolioItemContainer">
-
-							<div style="width:300px; margin: 0 auto">
-								<img src="images/topobrowser.png" width="300px" >
-								</div>
+							
 							<div class="portfolioImg">
 								<video width="300px" style="position: absolute;
     opacity: .5;" playsinline autoplay muted loop>
@@ -195,17 +204,12 @@
 							</div>
 
 						</div>
-						</a>
 
 
 
 
-						<a href="http://www.coalhadas.com.br/" target="_blank">
 						<div class="portfolioItemContainer">
-
-							<div style="width:300px; margin: 0 auto">
-								<img src="images/topobrowser.png" width="300px" >
-								</div>
+							
 							<div class="portfolioImg">
 								<video width="300px" style="position: absolute;
     opacity: .5;" playsinline autoplay muted loop>
@@ -228,16 +232,12 @@
 							</div>
 
 						</div>
-						</a>
 
 
 
-						<a href="http://deborahpaivaconcursos.com.br/" target="_blank">
+
 						<div class="portfolioItemContainer">
-
-							<div style="width:300px; margin: 0 auto">
-								<img src="images/topobrowser.png" width="300px" >
-								</div>
+							
 							<div class="portfolioImg">
 								<video width="300px" style="position: absolute;
     opacity: .5;" playsinline autoplay muted loop>
@@ -264,11 +264,8 @@
 
 
 
-
 						<div class="portfolioItemContainer">
-							<div style="width:300px; margin: 0 auto">
-								<img src="images/topobrowser.png" width="300px" >
-								</div>
+							
 							<div class="portfolioImg">
 								<video width="300px" style="position: absolute;
     opacity: .5;" playsinline autoplay muted loop>
@@ -294,12 +291,9 @@
 
 
 
-					
-						<a href="http://dpiradiologia.com.br/" target="_blank">
+
 						<div class="portfolioItemContainer">
-							<div style="width:300px; margin: 0 auto">
-								<img src="images/topobrowser.png" width="300px" >
-								</div>
+							
 							<div class="portfolioImg">
 								<video width="300px" style="position: absolute;
     opacity: .5;" playsinline autoplay muted loop>
@@ -322,16 +316,13 @@
 							</div>
 
 						</div>
-						</a>
 
 
 
 
-						<a href="http://idecora.com.br/" target="_blank">
+
 						<div class="portfolioItemContainer">
-							<div style="width:300px; margin: 0 auto">
-								<img src="images/topobrowser.png" width="300px" >
-								</div>
+							
 							<div class="portfolioImg">
 								<video width="300px" style="position: absolute;
     opacity: .5;" playsinline autoplay muted loop>
@@ -354,15 +345,12 @@
 							</div>
 
 						</div>
-						</a>
 
 
 
-						<a href="http://www.lailahallack.com.br/" target="_blank">
+
 						<div class="portfolioItemContainer">
-							<div style="width:300px; margin: 0 auto">
-								<img src="images/topobrowser.png" width="300px" >
-								</div>
+							
 							<div class="portfolioImg">
 								<video width="300px" style="position: absolute;
     opacity: .5;" playsinline autoplay muted loop>
@@ -385,7 +373,6 @@
 							</div>
 
 						</div>
-						</a>
 
 
 
@@ -405,10 +392,7 @@
 	    
 
 	</div>
-
-
-
-	<div class="section about" id="about">
+	<div class="section about" id="section2">
 		
 		<div class="box2 preto"><span class="mullerBold">about</span><span class="mullerUltraLight">me</span></div>
 
@@ -435,70 +419,18 @@ Solid skills with developing hybrid aplications for Android/iOS (Cordova/PhoneGa
 
 		</div>
 	</div>
-
-
-
-
-
-	<div class="section contact" id="contact">
-		
-		<div class="box2"><span class="mullerBold">contact</span><span class="mullerUltraLight">me</span></div>
-
-		<div class="aboutMe" style="height:90%">
-
-			<div class="container-about">
-				
-
-				<div class="text-contact"><span class="mullerBold" style="font-size:24px">Do you have any questions? Fell free to send me an e-mail.</span>
-				<span style="font-size:18px"><p><a href="mailto:hugorezendedev@gmail.com">hugorezendedev@gmail.com</a></p></span>
-				</div>
-			</div>
-
-
-		</div>
-	</div>
-
-
-
 </div>
 
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
 
 <script>
 
-
-
-//slider ancora
 $(document).ready(function(){
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-        var target = this.hash;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop':  $target.offset().top //no need of parseInt here
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
+  //$('.projectsSlide').slick({  	slidesToShow: 2  });
 });
 
 
-$(window).scroll( function() {
-				//console.log($(window).scrollTop());
-			
- 			if ($(window).scrollTop() > 50) {
-		    	$('.container-menu').css({ background: 'rgba(0,0,0,.5)'});
-		    	
-		    	
-			  } else {
-		   		$('.container-menu').css({ background: 'none'});
-		  
-		
-		}	
-		});
-	
-
-
-
+//$(".box1").hide();
 </script>
 
 </body>

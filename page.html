@@ -1,0 +1,154 @@
+<html>
+<head>
+	<title>Hugo Rezende</title>
+
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	
+	
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			
+			/*
+				$('#fullpage').fullpage({
+				anchors: ['projetos', 'sobre', 'contato'],
+				
+				//normalScrollElements: '#section1',
+				scrollOverflow: true
+				
+			});
+			*/
+			$(".portfolioItemContainer").hover(function(){
+
+
+				$( this ).find(".testeEfeito").addClass("testeEfeitoHover");
+				$( this ).addClass("current");
+
+				}, function() {
+    			$( this ).find(".testeEfeito").removeClass( "testeEfeitoHover" );
+    			$( this ).removeClass( "current" );
+
+
+
+  			})
+
+
+
+  			$(".box1, .subtitle, .container-menu").hide().each(function(i) {
+  				
+  				$(this).delay(i*500).fadeIn();
+  				
+			});
+			
+		});
+	</script>
+
+
+
+</head>
+
+<body>
+
+	<div class="container-menu">
+		<ul class="menu">
+			<li class="item"><a href="#">projects</a></li>
+			<li class="item"><a href="#">about</a></li>
+			<li class="item"><a href="#">contact</a></li>
+		</ul>
+	</div>
+
+	<div id="fullpage">
+
+	
+
+	<div class="section projects" id="section1">
+		
+		
+
+
+		<div class="projectsSlide">
+
+				
+
+				
+					<div class="content-esquerda">
+						<div class="tit">Moviecom Cinemas</div>
+						<div class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					</div>
+
+					<div class="content-direita">
+					<img src="images/topobrowser.png">
+					<div class="video">
+						<video width="500px"  playsinline autoplay muted loop>
+						  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+						<source src="folio/moviecom.webm" type="video/webm">
+						
+						</video>
+					</div>
+
+					<div class="mobile">
+						<img src="images/mobile.png">
+						<div class="video">
+
+						<video width="112px"  playsinline autoplay muted loop>
+						  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+						<source src="folio/moviecom_mobile.webm" type="video/webm">
+						
+						</video>
+
+						</div>
+					</div>
+
+					</div>
+
+			
+
+
+
+				
+		
+		
+
+		</div>
+
+
+	    
+	    
+
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+  //$('.projectsSlide').slick({  	slidesToShow: 2  });
+});
+
+
+$(".box1").hide();
+</script>
+
+</body>
+</html>
